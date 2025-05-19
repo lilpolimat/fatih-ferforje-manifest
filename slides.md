@@ -798,6 +798,8 @@ Bizden daha başarılı olduğunu fark ettiğimiz andan itibaren rakibin formül
 ## 5 - E-Mail Bülteni ve Öteki stratejiler
 Bir E-Mail bülteni başlatarak sektörümüzde hobicilere ya da girişimlere bilgi vermek adına çeşitli bültenler düzenleyebiliriz. Bilgiye verilen değer açık olduğundan, insanlara bilgi dağıtımı yoluyla fayda yaratmak en güçlü marketing/SEO stratejilerinden birisi.
 
+---
+
 ## Alan Adı Seçimi
 Görüşmemizden sonra ideal alan adı kaydı için neler yapabileceğimizi inceledim.
 Domain seçiminde gözetilmesi gereken birkaç kural var, en temel prensip -> hatırlanabilir olması. Bu bağlamda underscore-dash (_ ve -) gibi özel karakterler ve sayılar kullanılmaması tavsiye ediliyor. Anahtar kelimeden yürüyeceğimiz için, birtakım seçeneklerle kısıtlıydık.
