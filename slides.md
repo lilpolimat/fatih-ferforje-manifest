@@ -781,7 +781,7 @@ En başından itibaren API odaklı ilerleyeceğimizden, bunu bu sade ve basit ha
 ***
 
 ## 2 - Backlink trafiğini alışverişe çevirmek
-Alışveriş yaklaşımıyla farklı web kaynaklarıyla iletişime geçip backlink alışveişi/trafiği yapabiliriz.
+Alışveriş yaklaşımıyla farklı web kaynaklarıyla iletişime geçip backlink alışverişi/trafiği yapabiliriz. Sektörle ilgili blogların ve yerel haber bültenlerinin bu yönde değerlendirilmesi, doğru bir backlink yaklaşımı.
 
 ***
 
