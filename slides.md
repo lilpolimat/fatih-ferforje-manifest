@@ -1,5 +1,7 @@
 # Fatih Ferforje SEO-Adapted Multilingual Landing Manifest
 (Klavyenizdeki Space tuşu ile akışa göre devam edebilir, geri dönmek istediğinizde yine klavyenizdeki ok tuşları ile yönlendirebilirsiniz)
+
+Tüm sayfaları inceleyip arasında ok tuşları ile gezinmek için "O" harfine tıklayın. Mobilden erişim sağlıyorsanız, lütfen slide'ı yatay şekilde inceleyin, Touchscreen özellikleri deaktif edildi.
 ---
 
 ## Mevcut SEO
