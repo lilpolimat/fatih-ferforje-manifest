@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Fatih Ferforje - Dijital Dönüşüm Manifestosu</title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/white.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="https://www.fatih.com.tr/resimler/favicon.ico">
+    <style>
+.reveal .slides li {
+  list-style: none;      
+  padding-left: 0;
+}
+.reveal .slides li .line:first-child::before {
+  content: '•';               
+  color: inherit;            
+  display: inline-block;
+  width: 1em;                 
+  margin-right: 0.3em;
+}
+.reveal {
+  font-size: 1.6rem;
+}
+.fullscreen-mask {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  pointer-events: none;
+  z-index: 99999;
+  transform-origin: left center;
+  transform: scaleX(1);
+}
+.highlight-green, .highlight-red {
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+
+.highlight-green {
+  background-image: linear-gradient(to right, #00aa00, #00aa00);
+  animation-name: fillGreen;
+}
+
+.highlight-red {
+  background-image: linear-gradient(to right, #cc0000, #cc0000);
+  animation-name: fillRed;
+}
+
+@keyframes fillGreen {
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes fillRed {
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .reveal {
+    font-size: clamp(24px, 6vw, 60px);
+  }
+}
+    </style>
+
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-markdown="slides.md"
+          data-separator="^---$"
+          data-separator-vertical="^\*\*\*$"
+        ></section>
+      </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        navigationMode: "linear",
+        backgroundTransition: "none",
+        touch: false,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+      if (window.innerWidth <= 768) {
+  document.addEventListener(
+    'touchstart',
+    function (e) {
+      e.preventDefault();
+    },
+    { passive: false }
+  );
+}
+
+    </script>
+    <script>
+gsap.registerPlugin(SplitText);
+
+function animateText(container) {
+  if (!container) return; 
+  const targets = container.querySelectorAll("h1, h2, h3, p");
+  targets.forEach((el) => {
+    if (el.classList.contains("animated")) return;
+    el.classList.add("animated");
+    const split = new SplitText(el, {
+      type: "lines",
+      linesClass: "line",
+      preserveHTML: true,
+    });
+    gsap.from(split.lines, {
+      yPercent: 100,
+      opacity: 0,
+      duration: 1,
+      ease: "expo.out",
+      stagger: 0.1,
+    });
+  });
+}
+function animateTextWhenFontsReady(container) {
+  document.fonts.ready.then(() => {
+    animateText(container);
+  });
+}
+document.fonts.ready.then(() => {
+  animateText(Reveal.getCurrentSlide());
+});
+Reveal.on("ready", (event) => animateTextWhenFontsReady(event.currentSlide));
+Reveal.on("slidechanged", (event) => animateTextWhenFontsReady(event.currentSlide));
+Reveal.on("slidetransitionend", (event) => animateTextWhenFontsReady(event.currentSlide));
+function shouldAnimateMask(slide) {
+  // data-mask attribute varsa veya class ile kontrol
+  return slide.hasAttribute('data-mask') || slide.classList.contains('mask-slide');
+}
+
+function revealWithFullscreenMask() {
+  const slide = Reveal.getCurrentSlide();
+
+  if (!shouldAnimateMask(slide)) return;
+
+  const mask = document.createElement('div');
+  mask.classList.add('fullscreen-mask');
+  document.body.appendChild(mask);
+
+  gsap.to(mask, {
+    duration: 1,
+    scaleX: 0,
+    ease: "power2.inOut",
+    onComplete: () => {
+      mask.remove();
+    }
+  });
+}
+
+Reveal.on("ready", () => {
+  revealWithFullscreenMask();
+});
+
+Reveal.on("slidechanged", () => {
+  revealWithFullscreenMask();
+});
+
+
+    </script>
+  </body>
+</html>
