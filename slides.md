@@ -669,7 +669,7 @@ Her bir içerik farklı ülke için tutulmuş yerel ya da denizaşırı yazara �
 <b>Headless CMS mimarimizde nasıl olacak?</b>
 </li>
 <p>
-Her bir içerik farklı ülke için tutulmuş yerel ya da denizaşırı yazara çevriltilecek, ayrıca redaksiyon ve kontrol için de bizden bağımsız bir süreç yürütülmesi gerekecek.
+Yerel ya da denizaşırı yazar fark etmeksizin, kontrollerini sağlayabileceğimiz içerik oluşturma sürecine merkezi API'mız üzerinden dahil olacak. Süreç bizim müşahedemiz ile tamamen entegre.
 </p>
 </ul>
 
