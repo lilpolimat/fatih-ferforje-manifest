@@ -646,7 +646,7 @@ En başında altdizin yönetimi yapmak, çok sancılı bir süreç. Siz bunu tek
 ***
 
 #### 1 - Kiminle çalışacağınızı seçmekte özgürsünüz
-Benimle çalıştığınızı varsayalım, bir sebepten yollarımızı ayırmak zorunda kaldık ya da artık benimle çalışmak istemiyorsunuz; bu teknolojilerin kullandığı dili ve yöntemleri anlayan herhangi bir insanı IT departmanınızda administrator koltuğuna oturttuğunuz an, her şey devroluyor. Tek bir kod tabanı var ve bakımını Denizli’de yapıp, her ülkeye yarım saat içinde yollayabiliyorsunuz. Her ülkede farklı yazılımcıyla çalışmaya gerek yok. Yapılan her doğru ve yapılan her yanlış, her ülkedeki prezentasyona doğrudan ulaşıyor. Takip etmek, yakalamak, geri dönüşleri inceleyip aksiyon almak çok daha basit. Biz şimdi kimi getireceğiz, bu iş nasıl hallolacak kaygısından kurtuluyorsunuz. **Evrensel ve kuralcı.**
+Benimle çalıştığınızı varsayalım, bir sebepten yollarımızı ayırmak zorunda kaldık ya da artık benimle çalışmak istemiyorsunuz; bu teknolojilerin kullandığı dili ve yöntemleri anlayan herhangi bir insanı IT departmanınızda administrator koltuğuna oturttuğunuz an, her şey devroluyor. Tek bir kod tabanı var ve bakımını Denizli’de yapıp, her ülkeye yarım saat içinde yollayabiliyorsunuz. Her ülkede farklı yazılımcıyla çalışmaya gerek yok. Yapılan her doğru ve yapılan her yanlış, her ülkedeki uygulamaya doğrudan ulaşıyor. Takip etmek, yakalamak, geri dönüşleri inceleyip aksiyon almak çok daha basit. Biz şimdi kimi getireceğiz, bu iş nasıl hallolacak kaygısından kurtuluyorsunuz. **Evrensel ve kuralcı.**
 
 ***
 
@@ -756,13 +756,13 @@ Kullanılacak çerez ve robot politikaları, crawling’e ve kullanıcı verisin
 
 ## Dokümantasyon ve özel personel eğitimine uygunluk
 
-Süreci standartlara kavuşturduktan sonra bu alanda çalışacak personelin talimi, tutulması ve çalıştırılması daha mümkün ve daha ucuz hale gelecek. İçerik üretimi ve takibi için outsourcing ya da Türkiye pazarında çözümlere başvurulabilir, gerekli insan kaynağı kolayca sağlanabilir. Dokümantasyon ve eğitim modülleri ile SEO politikası konsuunda kendi personelimizin bilinçlenip daha az masrafla daha verimli operasyon yürütmesi hedeflenebilir.
+Süreci standartlara kavuşturduktan sonra bu alanda çalışacak personelin talimi, tutulması ve çalıştırılması daha mümkün ve daha ucuz hale gelecek. İçerik üretimi ve takibi için outsourcing ya da Türkiye pazarında çözümlere başvurulabilir, gerekli insan kaynağı kolayca sağlanabilir. Dokümantasyon ve eğitim modülleri ile SEO politikası konusunda kendi personelimizin bilinçlenip daha az masrafla daha verimli operasyon yürütmesi hedeflenebilir.
 
 ---
 
 ## Mikroservis mimarisine dönüşüm şansı
 ### API-First development yaklaşımı
-En başından itibaren API odaklı ilerleyeceğimizden, bunu bu sade ve basit haliyle sürdürebiöir ya da gelişimini sağlamak için mikroservis mimarisine geçişi mümkün kılabiliriz. Mikroservis mimarisi kısaca bir uygulamanın fonksiyonlarının mümkün olduğunca parçalanıp birbirinden bağımsız fakat köprü bağlantılarla senkron çalışmasıdır. Bu modele perakende ticaret için modüller eklenebilir ya da daha farklı özellikler geliştirilebilir.
+En başından itibaren API odaklı ilerleyeceğimizden, bunu bu sade ve basit haliyle sürdürebilir ya da gelişimini sağlamak için mikroservis mimarisine geçişi mümkün kılabiliriz. Mikroservis mimarisi kısaca bir uygulamanın fonksiyonlarının mümkün olduğunca parçalanıp birbirinden bağımsız fakat köprü bağlantılarla senkron çalışmasıdır. Bu modele perakende ticaret için modüller eklenebilir ya da daha farklı özellikler geliştirilebilir.
 
 ***
 
